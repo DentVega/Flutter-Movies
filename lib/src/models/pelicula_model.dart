@@ -70,4 +70,12 @@ class Pelicula {
       return 'https://image.tmdb.org/t/p/w500/$posterPath';
     }
   }
+
+  getBackgroundImage() {
+    if (posterPath == null) {
+      return 'https://discountseries.com/wp-content/uploads/2017/09/default.jpg';
+    } else {
+      return 'https://image.tmdb.org/t/p/w500/$backdropPath';
+    }
+  }
 }
